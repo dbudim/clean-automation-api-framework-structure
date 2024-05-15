@@ -6,7 +6,7 @@
 
     <groupId>com.dbudim</groupId>
     <artifactId>clean-automation-api-framework-structure</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.6-snapshot-3</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

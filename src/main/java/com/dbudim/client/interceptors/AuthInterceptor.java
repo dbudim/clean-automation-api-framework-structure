@@ -10,7 +10,7 @@ public class AuthInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request authentificated = chain.request().newBuilder()
-                .addHeader("Authorization", "Token rlDD7ard7wTydIrGyWZutbmtcF4ohPtZ:N0aSiird4Dp0K2ZSrwctJGwWt9W2xF9Y")
+                .addHeader("Authorization", "Token qe8847gtDi8vNyLLBzZSsyKe9hpsqDh5:7JYqDHpQ0KN69vl1WpThMMfZQqcVADiO")
                 .build();
         return chain.proceed(authentificated);
     }

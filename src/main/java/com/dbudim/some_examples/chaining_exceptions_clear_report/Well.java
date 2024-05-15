@@ -24,9 +24,7 @@ public class Well {
                 .findFirst()
                 .orElseThrow(() -> new ShelveNotFoundException(shelveName));
 
-        Book book = ExecutionUtils.execute(client.booksService.getBooks()).body()
-                .data
-                .stream()
+        Book book = shelve.books.stream()
                 .filter(b -> b.name.equals(bookName))
                 .findFirst()
                 .orElseThrow(() -> new BookNotFoundException(bookName));
