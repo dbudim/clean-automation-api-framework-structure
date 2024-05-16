@@ -15,7 +15,7 @@ public class Well {
         this.client = client;
     }
 
-    public Optional<Book> findBookOtional(String name) {
+    public Optional<Book> findBookOptional(String name) {
         return ExecutionUtils.execute(client.booksService.getBooks()).body().data
                 .stream()
                 .filter(book -> book.name.equals(name))
